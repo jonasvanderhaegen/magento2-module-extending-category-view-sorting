@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Model\Config">
+        <plugin name="catalog_config_plugin"
+                type="Jvdh\ExtendedCategoryViewSorting\Plugin\ConfigPlugin" />
+    </type>
+    <type name="Magento\Catalog\Model\Config\Source\ListSort">
+        <plugin name="catalog_config_source_listsort"
+                type="Jvdh\ExtendedCategoryViewSorting\Plugin\Model\Config\Source\ListSort" />
+    </type>
+</config>
